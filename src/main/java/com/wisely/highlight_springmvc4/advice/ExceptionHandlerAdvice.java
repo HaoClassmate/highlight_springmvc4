@@ -23,9 +23,10 @@ public class ExceptionHandlerAdvice {
 	public void addAttributes(Model model) {
 		model.addAttribute("msg", "额外信息"); //3
 	}
-
+	
 	@InitBinder //4
 	public void initBinder(WebDataBinder webDataBinder) {
+		System.out.println("test");
 		webDataBinder.setDisallowedFields("id"); //5
 	}
 }
