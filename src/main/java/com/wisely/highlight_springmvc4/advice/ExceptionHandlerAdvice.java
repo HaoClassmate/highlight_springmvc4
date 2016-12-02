@@ -21,6 +21,9 @@ public class ExceptionHandlerAdvice {
 
 	@ModelAttribute //3
 	public void addAttributes(Model model) {
+		System.out.println(1111111111);
+		System.out.println(1111111111);
+		System.out.println(1111111111);
 		model.addAttribute("msg", "额外信息"); //3
 	}
 
